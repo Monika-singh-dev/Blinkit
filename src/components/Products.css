@@ -1,0 +1,116 @@
+.main-container{
+    /* height: 100%; */
+    width: 100%;
+    max-width: 1280px;
+    /* text-align: center; */
+    margin: 0px auto;
+    /* position: relative; */
+    /* -webkit-box-align: center; */
+   /* margin: auto; */
+   /* text-align: center;
+   display: block;
+     justify-content: center;
+   align-items: center;
+   margin: "auto";
+   width: "1250px"; */
+}
+
+.pan{
+    cursor: pointer;
+    border-radius: 0px;
+    display: flex;
+    overflow: auto hidden;
+}
+.ppb{
+    max-width: 100%;
+    overflow: auto hidden;
+    scrollbar-width: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    column-gap: 20px;
+    margin: 16px;
+}
+.col-sm{
+    height: 195px;
+    width: 335.4px;
+    cursor: pointer;
+    
+}
+.all-categories{
+    overflow-x: scroll;
+width: 100%;
+
+}
+.all-categories::-webkit-scrollbar {
+    display: none;
+  }
+.sections{
+display: grid;
+ grid-template-columns: repeat(10, 1fr);
+}
+.slices{
+    height: 160.882px;
+    width: 109.4px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+.dbe{
+    width: 100%;
+    max-width: 1280px;
+}
+.heading{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 0px 12px 10px;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* max-width: 100%;
+    overflow: auto hidden; */
+    /* border: 0.5px solid black; */
+}
+.sliderproduct-card{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    overflow: auto hidden;
+    scrollbar-width: none;
+    margin-right: 12px;
+    margin-right: 12px;
+    column-gap: 20px;
+    padding-bottom: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.producttype{
+    cursor: pointer;
+    flex: 0 1 0%;
+    flex-grow: 0;
+    /* flex-shrink: 1; */
+    flex-basis: 0%;
+    min-width: 179px;
+    max-width: 179px;
+   
+
+    /* min-width: 100%; */
+    grid-column: span 6;
+    padding-bottom: 0.75rem;
+    gap: 10px;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+    border-radius: 8px;
+}
