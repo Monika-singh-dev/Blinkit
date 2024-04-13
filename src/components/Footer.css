@@ -79,10 +79,17 @@ li{
     align-items: center;
     display: flex;
     padding-left: 16px;
-    color: rgb(12, 131, 31);
-    font-size: 16px;
+    color: rgb(5, 137, 5);
+    font-size: 20px;
 }
 .cf{
     display: flex;
     flex-direction: row;
+}
+.content{
+    font-size: 15px;
+    margin: 25px;
+    line-height: 20px;
+    color: gray;
+
 }

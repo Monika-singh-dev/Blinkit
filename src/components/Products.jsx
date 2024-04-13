@@ -1,14 +1,18 @@
 import React from "react";
 import "./Products.css";
+// import Header from "./Header";
+// import Footer from "./Footer";
 import images from "../images";
 import Productcard from "./Productcard";
 import { slices } from "../assests/slices";
 import { categories } from "../assests/categories";
 
+console.log(categories);
+
 const Products = () => {
-  
   return (
     <div className="main-container">
+    
       <div className="pan">
         <img
           src={images.Paan}
@@ -43,8 +47,9 @@ const Products = () => {
       </div>
 
       {categories.map((category, i) => (
-        <Productcard title={category.name} images={category.images} discription={category.discription}/>
+        <Productcard title={category.name} items={category.items} />
       ))}
+      
     </div>
   );
 };

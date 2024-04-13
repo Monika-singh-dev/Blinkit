@@ -34,7 +34,7 @@ const Header = () => {
             <IoSearch />
           </InputLeftElement>
           <Input
-            type="text"
+            type="search"
             placeholder="Search anything"
             // marginTop={"10px"}
           ></Input>

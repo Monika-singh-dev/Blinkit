@@ -1,0 +1,94 @@
+.main-description{
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    height: auto;
+
+}
+ .full-div{
+    width: 100%;
+    border-bottom:  3px solid lightgray;
+    position: relative;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.item-row{
+    /* display: table-cell;
+    flex-direction: row; */
+    z-index: 900;
+    /* margin-left: 250px; */
+    top: 90px;
+    
+    position: sticky;
+    background-color: white;
+
+
+}
+.item-name{
+    list-style: none;
+    padding: 0;
+}
+.item-name>li{
+    display: inline-block;
+}
+.ad{
+    display: block;
+    padding: 14px 13px;
+    color: gray;
+}
+/* @media screen and (min-width: 1020px) and (max-width: 1260px); */
+.itr{
+        width: 1280px;
+        /* display: block !important; */
+    /* float: none !important; */
+    /* margin-left: auto !important; */
+    /* margin-right: auto !important; */
+    margin: auto !important;
+    /* clear: both !important; */
+        
+}
+/* @media screen and (min-width: 1020px) and (max-width: 1260px) {
+    .itr,.footer {
+        width:980px;
+    }
+} */
+/* .mor::after{
+    content: "u";
+    font-family: IconFont;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+} */
+.category-div{
+    width: 100%;
+}
+.data-table{
+    display: table;
+    min-height: calc(100vh - 151px);
+    width: 100%;
+    height: fit-content;
+}
+.right-sec{
+    background-color: #fff;
+    border: none;
+    margin: 12px;
+    overflow: hidden;
+    width: 100%;
+}
+.item-div{
+    overflow-x: hidden;
+    padding: 8px;
+    background: rgb(244, 246, 251);
+}
+.card-sec{
+    width: 100%;
+    gap: 8px;
+    background: rgb(244, 246, 251);
+    position: relative;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}

@@ -1,30 +1,58 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
-const Productcard = ({ title, images, discription }) => {
+const Productcard = ({ title, items }) => {
   return (
     <div className="dbe">
       <div className="heading">
         <p style={{ fontSize: "25px" }}>
           <b>{title}</b>
         </p>
-        <p style={{ fontSize: "20px", color: "lightgreen" }}>
+        <a
+          style={{ fontSize: "20px", color: "lightgreen" }}
+          href="/Description"
+        >
           <b>see all</b>
-        </p>
+        </a>
       </div>
+
       <div className="product-card">
+        {/* <div className="befoore">
+          <section className="bforr">::before</section>
+        </div> */}
         <div className="sliderproduct-card">
-          {images.map((image, i) => (
+          {items.map((item, i) => (
             <div className="producttype" key={i}>
-              <img src={image} alt="paneer" />
-              <div>
-                <p>{discription}</p>
-                <Button colorScheme="teal" variant="outline" marginLeft={"5px"}>
-                  ADD
-                </Button>
+              <div className="productimage">
+                <img src={item.uri} alt="paneer" />
+              </div>
+              <div className="titlebar">
+                <div className="discription">
+                  <p>
+                    <b>{item.description}</b>
+                  </p>
+                </div>
+                <div className="div">
+                  <p style={{ color: "gray" }}>{item.weight}</p>
+                </div>
+                <div className="add">
+                  <p style={{ fontSize: "12px" }}>
+                    <b>₹{item.price}</b>
+                  </p>
+                  <Button
+                    colorScheme="teal"
+                    variant="outline"
+                    marginLeft={"5px"}
+                  >
+                    ADD
+                  </Button>
+                </div>
               </div>
             </div>
           ))}
         </div>
+        {/* <div className="befoor">
+          <section className="bfor">::before</section>
+        </div> */}
       </div>
     </div>
   );
