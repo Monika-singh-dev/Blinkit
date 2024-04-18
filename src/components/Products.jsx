@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Products.css";
 // import Header from "./Header";
 // import Footer from "./Footer";
@@ -6,15 +6,20 @@ import images from "../images";
 import Productcard from "./Productcard";
 import { slices } from "../assests/slices";
 import { categories } from "../assests/categories";
+import { Appaction } from "./context/Actionprovider";
 
-console.log(categories);
+// console.log(categories);
 
 const Products = () => {
+  const { confirmModelHnadler } = useContext(Appaction);
+  // console.log("image click");
+
   return (
     <div className="main-container">
       <div className="pan">
         <img
           src={images.Paan}
+          onClick={confirmModelHnadler}
           alt="Paan corner"
           style={{
             textalign: "center",

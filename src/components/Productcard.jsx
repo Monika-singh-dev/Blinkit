@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 const Productcard = ({ title, url, items }) => {
+  
   return (
     <div className="dbe">
       <div className="heading">

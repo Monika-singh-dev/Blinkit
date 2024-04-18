@@ -1,7 +1,6 @@
 import {
   Button,
   FormControl,
-  FormLabel,
   Modal,
   ModalBody,
   ModalContent,
@@ -38,9 +37,9 @@ const Logincard = () => {
                 Login
               </a>
               or<a href="#">signup</a>
-              <FormControl>
+              {/* <FormControl>
                 <PhoneInput placeholder="" />
-              </FormControl>
+              </FormControl> */}
               <Button style={{ marginTop: "10px" }}>Continue</Button>
             </ModalBody>
             <ModalFooter>
@@ -53,6 +52,8 @@ const Logincard = () => {
         </center>
       </ModalOverlay>
     </Modal>
+
+    //warning card
   );
 };
 

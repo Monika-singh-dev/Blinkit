@@ -6,6 +6,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Logincard from "./components/Logincard";
+import Confirmcard from "./components/Confirmcard";
 
 function App() {
   console.log("app");
@@ -20,6 +21,7 @@ function App() {
       </BrowserRouter>
       <Footer />
       <Logincard />
+      <Confirmcard />
     </ChakraProvider>
   );
 }
