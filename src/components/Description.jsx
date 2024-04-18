@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Description.css";
+import { useParams } from "react-router-dom";
 
 import { categories } from "../assests/categories";
-import Descriptioncard from "./Descriptioncard";
+
+import { Button } from "@chakra-ui/react";
 
 const Description = () => {
+  const { name } = useParams();
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    // name -> fetch category items
+
+    const fetchData = categories.filter((obj) => obj.url === name);
+
+    setItems(fetchData[0].items);
+  }, []);
+
   return (
     <div className="main-description">
       <div className="full-div">
@@ -46,23 +59,6 @@ const Description = () => {
                   Bakery & Biscuits
                 </a>
               </li>
-              <li>
-                {/* <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  Dropdown Button
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown> */}
-              </li>
             </nav>
           </div>
         </div>
@@ -78,12 +74,37 @@ const Description = () => {
             </div>
             <div className="item-div">
               <div className="card-sec">
-                {categories.map((category, i) => (
-                  <Descriptioncard
-                    title={category.name}
-                    items={category.items}
-                  />
-                ))}
+                <div className="product-card">
+                  {items.map((item, i) => (
+                    <div className="producttype" key={i}>
+                      <div className="productimage">
+                        <img src={item.uri} alt="paneer" />
+                      </div>
+                      <div className="titlebar">
+                        <div className="discription">
+                          <p>
+                            <b>{item.description}</b>
+                          </p>
+                        </div>
+                        <div className="div">
+                          <p>{item.weight}</p>
+                        </div>
+                        <div className="add">
+                          <p style={{ fontSize: "12px" }}>
+                            <b>₹{item.price}</b>
+                          </p>
+                          <Button
+                            colorScheme="teal"
+                            variant="outline"
+                            marginLeft={"5px"}
+                          >
+                            ADD
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

@@ -84,8 +84,9 @@ import Paan from "./top1.webp";
 import Pharmacy from "./pharmacy.avif";
 import Petcare from "./Pet-Care.avif";
 import Babycare from "./babycare.avif";
-
+import logo from "./main logo of blinkit.webp";
 export default {
+  logo,
   Paan,
   Pharmacy,
   Petcare,

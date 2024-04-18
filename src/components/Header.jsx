@@ -5,12 +5,15 @@ import {
   InputGroup,
   InputLeftElement,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useContext } from "react";
+import { Appaction } from "./context/Actionprovider";
 import Img1 from "../images/logo.png";
 import { IoSearch } from "react-icons/io5";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Footer.css";
+
 const Header = () => {
+  const { loginModelHnadler } = useContext(Appaction);
   return (
     <nav className="main-navbar">
       <Flex bg={""} borderBottom={"1px solid #e6e6e6"}>
@@ -40,7 +43,9 @@ const Header = () => {
           ></Input>
         </InputGroup>
 
-        <Button mt={4}>Login</Button>
+        <Button mt={4} onClick={loginModelHnadler}>
+          Login
+        </Button>
         <Button
           leftIcon={<AiOutlineShoppingCart />}
           size={"lg"}

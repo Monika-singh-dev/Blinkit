@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
-const Productcard = ({ title, items }) => {
+const Productcard = ({ title, url, items }) => {
   return (
     <div className="dbe">
       <div className="heading">
@@ -9,7 +9,7 @@ const Productcard = ({ title, items }) => {
         </p>
         <a
           style={{ fontSize: "20px", color: "lightgreen" }}
-          href="/Description"
+          href={`/category/${url}`}
         >
           <b>see all</b>
         </a>

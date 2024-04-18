@@ -12,7 +12,6 @@ console.log(categories);
 const Products = () => {
   return (
     <div className="main-container">
-    
       <div className="pan">
         <img
           src={images.Paan}
@@ -47,9 +46,12 @@ const Products = () => {
       </div>
 
       {categories.map((category, i) => (
-        <Productcard title={category.name} items={category.items} />
+        <Productcard
+          title={category.name}
+          url={category.url}
+          items={category.items}
+        />
       ))}
-      
     </div>
   );
 };

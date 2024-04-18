@@ -3,6 +3,7 @@ import images from "../images";
 export const categories = [
   {
     name: "Dairy, Bread & Egg",
+    url: "Dairy-Bread-&-Egg",
     items: [
       {
         uri: images.Dbe1,
@@ -74,6 +75,7 @@ export const categories = [
   },
   {
     name: "Rolling paper & tobacoo",
+    url: "rolling-paper-and-tobacoo",
     items: [
       {
         uri: images.Rp1,
@@ -122,6 +124,7 @@ export const categories = [
   },
   {
     name: "Snacks & Munchies",
+    url: "Snacks-&-Munchies",
     items: [
       {
         uri: images.Snacks1,
@@ -217,6 +220,7 @@ export const categories = [
   },
   {
     name: "Cold Drinks & Juices",
+    url: "Cold-Drinks-&-Juices",
     items: [
       {
         uri: images.Drink1,
@@ -312,6 +316,7 @@ export const categories = [
   },
   {
     name: "Candies & Gums",
+    url: "Candies-&-Gums",
     items: [
       {
         uri: images.Cg1,

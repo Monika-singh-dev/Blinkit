@@ -5,6 +5,7 @@ import Description from "./components/Description";
 import { ChakraProvider } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Logincard from "./components/Logincard";
 
 function App() {
   console.log("app");
@@ -14,10 +15,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" Component={Products} />
-          <Route path="/Description" Component={Description} />
+          <Route path="/category/:name" Component={Description} />
         </Routes>
       </BrowserRouter>
       <Footer />
+      <Logincard />
     </ChakraProvider>
   );
 }
