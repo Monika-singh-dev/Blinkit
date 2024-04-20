@@ -67,6 +67,17 @@ import Drink12 from "./drink12.avif";
 import Drink13 from "./drink13.avif";
 import Drink14 from "./drink14.avif";
 import Drink15 from "./drink15.avif";
+import Drink16 from "./drink16.avif";
+import Drink17 from "./drink17.avif";
+import Drink18 from "./drink18.avif";
+import Drink19 from "./drink19.webp";
+import Drink20 from "./drink20.avif";
+import Drink21 from "./drink21.avif";
+import Drink22 from "./drink22.avif";
+import Drink23 from "./drink23.avif";
+import Drink24 from "./drink24.avif";
+import Drink25 from "./drink25.avif";
+import Drink26 from "./drink26.avif";
 import Cg1 from "./cg1.avif";
 import Cg2 from "./cg2.avif";
 import Cg3 from "./cg3.avif";
@@ -85,7 +96,68 @@ import Pharmacy from "./pharmacy.avif";
 import Petcare from "./Pet-Care.avif";
 import Babycare from "./babycare.avif";
 import logo from "./main logo of blinkit.webp";
+import tobacco from "./need tobacco.webp";
+import tobaccob from "./need tobacco bottom.webp";
+import circle1 from "./1.avif";
+import circle2 from "./2.avif";
+import circle3 from "./3.avif";
+import circle4 from "./4.avif";
+import circle5 from "./5.avif";
+import circle6 from "./6.avif";
+import matchbox from "./matchbox.avif";
+import mf1 from "./mf1.avif";
+import mf2 from "./mf2.avif";
+import pc from "./pc.avif";
+import sm1 from "./sm1.avif";
+import sm2 from "./sm2.avif";
+import sm3 from "./sm3.avif";
+import sm4 from "./sm4.avif";
+import sm5 from "./sm5.avif";
+import sm6 from "./sm6.avif";
+import sm7 from "./sm7.avif";
+import sm8 from "./sm8.avif";
+import ed1 from "./ed1.avif";
+import ed2 from "./ed2.avif";
+import ed3 from "./ed3.avif";
+import ed4 from "./ed4.avif";
+import ed5 from "./ed5.avif";
 export default {
+  ed1,
+  ed2,
+  ed3,
+  ed4,
+  ed5,
+  sm1,
+  sm2,
+  sm3,
+  sm4,
+  sm5,
+  sm6,
+  sm7,
+  sm8,
+  Drink16,
+  Drink17,
+  Drink18,
+  Drink19,
+  Drink20,
+  Drink21,
+  Drink22,
+  Drink23,
+  Drink24,
+  Drink25,
+  Drink26,
+  mf1,
+  mf2,
+  pc,
+  matchbox,
+  circle1,
+  circle2,
+  circle3,
+  circle4,
+  circle5,
+  circle6,
+  tobacco,
+  tobaccob,
   logo,
   Paan,
   Pharmacy,

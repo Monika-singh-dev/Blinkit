@@ -399,3 +399,282 @@ export const categories = [
     ],
   },
 ];
+
+export const paancategories = [
+  {
+    name: "Party essentials",
+    url: "Party-essentials",
+    items: [
+      {
+        uri: images.matchbox,
+        weight: "5 units",
+        description: "Matchbox by Homelites",
+        price: 10,
+      },
+      {
+        uri: images.Rp5,
+        weight: "1 pack (32 pieces)",
+        description: "Black Classic Slim Rolling Paper",
+        price: 150,
+      },
+      {
+        uri: images.Rp2,
+        weight: "1 unit (32 pieces)",
+        description: "Brown Rolling Paper (King Size) - Stash Pro",
+        price: 50,
+      },
+      {
+        uri: images.Rp3,
+        weight: "i unit",
+        description: "Brown Rolling Paper + Roach with Crushing",
+        price: 120,
+      },
+    ],
+  },
+  {
+    name: "Paan corner",
+    url: "Paan-corner",
+    items: [
+      {
+        uri: images.matchbox,
+        weight: "5 units",
+        description: "Matchbox by Homelites",
+        price: 10,
+      },
+      {
+        uri: images.Rp5,
+        weight: "1 pack (32 pieces)",
+        description: "Black Classic Slim Rolling Paper",
+        price: 150,
+      },
+      {
+        uri: images.mf1,
+        weight: "100gm",
+        description: "Chandan Mint Saunf Mouth Freshener",
+        price: "41",
+      },
+      {
+        uri: images.Cg2,
+        weight: "22gm",
+        description: "Orbit Spearmint Flavour Sugar Free Chewingum",
+        price: "48",
+      },
+      {
+        uri: images.pc,
+        weight: "30.4gm",
+        description: "Wrigley's Doublemint Peppermint Candy",
+        price: "50",
+      },
+      {
+        uri: images.mf2,
+        weight: "100gm",
+        description: "Chandan Jeera Goli Digestive Tablets",
+        price: "43",
+      },
+    ],
+  },
+  {
+    name: "Soft Drinks",
+    url: "Soft-Drinks",
+    items: [
+      {
+        uri: images.Drink9,
+        weight: "750ml",
+        description: "Sprite Lime Flavored Soft Drink 750 ml",
+        price: "45",
+      },
+      {
+        uri: images.Drink14,
+        weight: "750ml",
+        description: "Coca-Cola Soft Drink (750 ml)",
+        price: "45",
+      },
+      {
+        uri: images.Drink8,
+        weight: "750ml",
+        description: "Thums Up Soft Drink (750 ml)",
+        price: "45",
+      },
+      {
+        uri: images.Drink16,
+        weight: "300ml",
+        description: "Coca-Cola Zero Sugar Soft Drink",
+        price: "40",
+      },
+      {
+        uri: images.Drink6,
+        weight: "750ml",
+        description: "Pepsi Soft Drink",
+        price: "40",
+      },
+      {
+        uri: images.Drink17,
+        weight: "250ml",
+        description: "7UP Nimbooz with Lemon Juice",
+        price: "25",
+      },
+      {
+        uri: images.Drink18,
+        weight: "300ml",
+        description: "Thums Up Soft Drink (300 ml)",
+        price: "40",
+      },
+      {
+        uri: images.Drink19,
+        weight: "750",
+        description: "Limca Lime 'N' Lemon Soft Drink 750 ml",
+        price: "45",
+      },
+      {
+        uri: images.Drink20,
+        weight: "300ml",
+        description: "Coca-Cola Diet Coke Soft Drink",
+        price: "40",
+      },
+      {
+        uri: images.Drink21,
+        weight: "600ml",
+        description: "Bisleri Limonata Limey Minty Cooler Soft Drink",
+        price: "20",
+      },
+      {
+        uri: images.Drink22,
+        weight: "750 ml",
+        description: "Mirinda Soft Drink",
+        price: "40",
+      },
+      {
+        uri: images.Drink23,
+        weight: "250ml",
+        description: "Pepsi Black Zero Sugar Soft Drink",
+        price: "35",
+      },
+      {
+        uri: images.Drink24,
+        weight: "300ml",
+        description: "oca-Cola Soft Drink",
+        price: "40",
+      },
+      {
+        uri: images.Drink25,
+        weight: "300 ml",
+        description: "Schweppes Ginger Ale",
+        price: "59",
+      },
+      {
+        uri: images.Drink26,
+        weight: "750 ml",
+        description: " 7UP Soft Drink",
+        price: "40",
+      },
+    ],
+  },
+  {
+    name: "Soda & Mixers",
+    url: "Soda-&-Mixers",
+    items: [
+      {
+        uri: images.sm1,
+        weight: "24 x 250 ml",
+        description: "Bisleri Packaged Water - Pack of 24",
+        price: " 144",
+      },
+      {
+        uri: images.sm2,
+        weight: "750 ml",
+        description: "Bisleri Soda Water",
+        price: " 20",
+      },
+      {
+        uri: images.sm3,
+        weight: " 330 ml",
+        description: "Gunsberg ginger Ale",
+        price: "99",
+      },
+      {
+        uri: images.Drink11,
+        weight: " 750 ml",
+        description: "Kinley Soda Water With Extra Punch",
+        price: "20",
+      },
+      {
+        uri: images.sm4,
+        weight: " 600 ml",
+        description: "Lehar Evervess Club Soda Water",
+        price: "20",
+      },
+      {
+        uri: images.sm5,
+        weight: "500 ml",
+        description: " O'cean Mango & Passion Fruit Flavoured Water",
+        price: "60",
+      },
+      {
+        uri: images.sm6,
+        weight: " 500 ml",
+        description: "O'cean Peach & Passion Fruit Flavoured Water",
+        price: "60",
+      },
+      {
+        uri: images.sm7,
+        weight: "500 ml",
+        description: "O'cean Pink Guava Flavoured Water",
+        price: "60",
+      },
+      {
+        uri: images.sm8,
+        weight: "330 ml",
+        description: "Perrier Sparkling Water",
+        price: "165",
+      },
+    ],
+  },
+  {
+    name: "Energy Drinks",
+    url: "Energy-Drinks",
+    items: [
+      {
+        uri: images.ed1,
+        weight: " 250 ml",
+        description: "Red Bull Energy Drink (250 ml)",
+        price: "125",
+      },
+      {
+        uri: images.Drink4,
+        weight: "      250 ml",
+        description: "Sting Energy Drink (250 ml)",
+        price: "20",
+      },
+      {
+        uri: images.Drink3,
+        weight: " 350 ml",
+        description: "Monster Energy Drink",
+        price: "122",
+      },
+      {
+        uri: images.ed2,
+        weight: " 250 ml",
+        description: "Red Bull Energy Drink (Yellow Edition Tropical)",
+        price: "125",
+      },
+      {
+        uri: images.ed3,
+        weight: "250ml",
+        description: "Red Bull Energy Drink (Sugar Free) - 250 ml",
+        price: "125",
+      },
+      {
+        uri: images.ed4,
+        weight: "350ml",
+        description: "Monster Zero Sugar Ultra Energy Drink",
+        price: "125",
+      },
+      {
+        uri: images.ed5,
+        weight: "250ml",
+        description: "Sting Energy Drink",
+        price: "35",
+      },
+    ],
+  },
+];

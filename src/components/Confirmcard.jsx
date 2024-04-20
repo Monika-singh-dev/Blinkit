@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { Appaction } from "./context/Actionprovider";
-import { warning } from "framer-motion";
 
 const Confirmcard = () => {
   const { isConfirmOpen, confirmModelHnadler } = useContext(Appaction);
@@ -54,16 +53,18 @@ const Confirmcard = () => {
                 Cancle
               </Button>
               <Spacer />
-              <Button
-                style={{
-                  marginTop: "10px",
-                  background: "green",
-                  paddingLeft: "55px",
-                  paddingRight: "55px",
-                }}
-              >
-                Yes, I confirm
-              </Button>
+              <a href="/paan">
+                <Button
+                  style={{
+                    marginTop: "10px",
+                    background: "green",
+                    paddingLeft: "55px",
+                    paddingRight: "55px",
+                  }}
+                >
+                  Yes, I confirm
+                </Button>
+              </a>
             </ModalFooter>
           </ModalContent>
         </center>

@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Logincard from "./components/Logincard";
 import Confirmcard from "./components/Confirmcard";
+import Paancornerclick from "./components/Paancornerclick";
 
 function App() {
   console.log("app");
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" Component={Products} />
           <Route path="/category/:name" Component={Description} />
+          <Route path="/paan" Component={Paancornerclick} />
         </Routes>
       </BrowserRouter>
       <Footer />

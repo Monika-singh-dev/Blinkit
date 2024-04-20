@@ -1,0 +1,25 @@
+.main-containert{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+.tobacco{
+    cursor: pointer;
+    border-radius: 0px;
+    display: flex;
+    overflow: auto hidden;
+
+}
+.circle-img{
+    width: 100%;
+}
+.circle-sec{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.c-m{
+    height: 205.128px;
+    width: 213.333px;
+    cursor: pointer;
+    border-radius: 0px;
+}
