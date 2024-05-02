@@ -8,9 +8,26 @@ import Header from "./components/Header";
 import Logincard from "./components/Logincard";
 import Confirmcard from "./components/Confirmcard";
 import Paancornerclick from "./components/Paancornerclick";
+import { useEffect } from "react";
+import { getCategory, getItems } from "./sanity";
+import SeeAll from "./components/SeeAll";
 
 function App() {
-  console.log("app");
+  // console.log("app");
+  // useEffect(() => {
+  //   const data = await getItems();
+  //   console.log(data);
+  // }, []);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await getItems();
+  //     console.log(data);
+  //     const categories = await getCategory();
+  //     console.log(categories);
+  //   };
+  //   fetchData();
+  // }, []);
   return (
     <ChakraProvider>
       <Header />

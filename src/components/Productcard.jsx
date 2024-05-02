@@ -1,7 +1,8 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
-const Productcard = ({ title, url, items }) => {
-  
+import { urlFor } from "../sanity";
+const Productcard = ({ title, slug, items }) => {
+  // console.log(items);
   return (
     <div className="dbe">
       <div className="heading">
@@ -10,7 +11,7 @@ const Productcard = ({ title, url, items }) => {
         </p>
         <a
           style={{ fontSize: "20px", color: "lightgreen" }}
-          href={`/category/${url}`}
+          href={`/category/${slug}`}
         >
           <b>see all</b>
         </a>
@@ -24,12 +25,19 @@ const Productcard = ({ title, url, items }) => {
           {items.map((item, i) => (
             <div className="producttype" key={i}>
               <div className="productimage">
-                <img src={item.uri} alt="paneer" />
+                <img
+                  src={
+                    item.image
+                      ? urlFor(item.image)
+                      : "https://www.jqueryscript.net/demo/responsive-card-slider/img/default.jpg"
+                  }
+                  alt="paneer"
+                />
               </div>
               <div className="titlebar">
                 <div className="discription">
                   <p>
-                    <b>{item.description}</b>
+                    <b>{item.name}</b>
                   </p>
                 </div>
                 <div className="div">
@@ -38,6 +46,9 @@ const Productcard = ({ title, url, items }) => {
                 <div className="add">
                   <p style={{ fontSize: "12px" }}>
                     <b>₹{item.price}</b>
+                  </p>
+                  <p style={{ fontSize: "10px" }}>
+                    <b>₹{item.mrp}</b>
                   </p>
                   <Button
                     colorScheme="teal"

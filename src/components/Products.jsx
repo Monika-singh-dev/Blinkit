@@ -1,18 +1,29 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Products.css";
 // import Header from "./Header";
 // import Footer from "./Footer";
 import images from "../images";
 import Productcard from "./Productcard";
 import { slices } from "../assests/slices";
-import { categories } from "../assests/categories";
 import { Appaction } from "./context/Actionprovider";
+import { getItemsByCategory } from "../sanity";
 
 // console.log(categories);
 
 const Products = () => {
   const { confirmModelHnadler } = useContext(Appaction);
+  const [categories, setCategories] = useState([]);
   // console.log("image click");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const categories = await getItemsByCategory();
+      setCategories(categories);
+    };
+    fetchData();
+  }, []);
+
+  console.log(categories);
 
   return (
     <div className="main-container">
@@ -52,8 +63,8 @@ const Products = () => {
 
       {categories.map((category, i) => (
         <Productcard
-          title={category.name}
-          url={category.url}
+          title={category.title}
+          slug={category.slug}
           items={category.items}
         />
       ))}

@@ -3,7 +3,7 @@ import images from "../images";
 export const categories = [
   {
     name: "Dairy, Bread & Egg",
-    url: "Dairy-Bread-&-Egg",
+    slug: "Dairy-Bread-&-Egg",
     items: [
       {
         uri: images.Dbe1,

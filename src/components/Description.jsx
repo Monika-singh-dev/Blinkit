@@ -5,18 +5,21 @@ import { useParams } from "react-router-dom";
 import { categories } from "../assests/categories";
 
 import { Button } from "@chakra-ui/react";
+import { getCategoryBySlug, urlFor } from "../sanity";
 
 const Description = () => {
   const { name } = useParams();
-  const [items, setItems] = useState([]);
+  const [category, setCategory] = useState([]);
 
   useEffect(() => {
-    // name -> fetch category items
-
-    const fetchData = categories.filter((obj) => obj.url === name);
-
-    setItems(fetchData[0].items);
+    const fetchData = async () => {
+      const data = await getCategoryBySlug(name);
+      setCategory(data[0]);
+    };
+    fetchData();
   }, []);
+
+  console.log(category);
 
   return (
     <div className="main-description">
@@ -75,15 +78,22 @@ const Description = () => {
             <div className="item-div">
               <div className="card-sec">
                 <div className="product-card">
-                  {items.map((item, i) => (
+                  {category.items?.map((item, i) => (
                     <div className="producttype" key={i}>
                       <div className="productimage">
-                        <img src={item.uri} alt="paneer" />
+                        <img
+                          src={
+                            item.image
+                              ? urlFor(item.image)
+                              : "https://www.jqueryscript.net/demo/responsive-card-slider/img/default.jpg"
+                          }
+                          alt="paneer"
+                        />
                       </div>
                       <div className="titlebar">
                         <div className="discription">
                           <p>
-                            <b>{item.description}</b>
+                            <b>{item.name}</b>
                           </p>
                         </div>
                         <div className="div">
